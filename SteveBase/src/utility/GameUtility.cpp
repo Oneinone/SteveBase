@@ -12,15 +12,6 @@ namespace SteveBase::Utility {
 	std::string m_hackConfigLocation;
 	bool m_cheatRunning;
 
-	/*
-	vector<string> playerSoundList {
-		text("anarchist)(balkan)(fbihrt)(gign"),
-		text("gsg9)(idf)(leet)(phoenix"),
-		text("pirate)(professional)(sas)(seal"),
-		text("separatist)(swat"),
-	};
-	*/
-
 	void GameUtility::SetCheatRunning(bool running) {
 		m_cheatRunning = running;
 	}
@@ -44,27 +35,12 @@ namespace SteveBase::Utility {
 	std::string GameUtility::GetHackConfigLocation() {
 		return m_hackConfigLocation;
 	}
-    /*
-	void GameUtility::MsgTemplate(string name, string msg) {
-#if !SIMULATOR
-		auto mod = SystemUtility::SafeGetModuleHandle(text("tier0.dll"));
-		((MsgFn)GetProcAddress(mod, name.data()))(msg.c_str());
-#endif
-	}
-	void GameUtility::Msg(string msg) {
-		MsgTemplate(text("Msg"), msg);
-	}
-	void GameUtility::Warning(string msg) {
-		MsgTemplate(text("Warning"), msg);
-	}
-	void GameUtility::Log(string msg) {
-		MsgTemplate(text("Log"), msg);
-	}
-	
+
+#if 0
 #pragma warning(push)
 #pragma warning(disable: 4244) // precision loss
-	string GameUtility::SecondsToHMSString(time_t delta) {
-		auto str = string("");
+	std::string GameUtility::SecondsToHMSString(time_t delta) {
+		auto str = std::string("");
 
 		if (delta >= 3600) { // hours
 			int hrs = delta / 3600; // integer division returns quotient!! Unlike floating number division!!
@@ -92,15 +68,5 @@ namespace SteveBase::Utility {
 		return str;
 	}
 #pragma warning(pop)
-
-	void GameUtility::PlayRandomReadySound() {
-		GetInterface(ISurface)->PlaySound(
-			ggformat_to_string(
-				text("player/vo/{0}/inposition0{1}.wav"),
-				playerSoundList[rand() % playerSoundList.size()],
-				rand() % 3 + 1 // [1, 3)
-			)
-		);
-	}
-	*/
+#endif
 }

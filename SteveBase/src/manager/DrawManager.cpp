@@ -374,7 +374,7 @@ namespace SteveBase::Manager {
               ggformat_to_string(text("Application average {0} ms/frame ({1} FPS)"), 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate).c_str()
           };
           PowerDraw::Text {
-              text(u8"你好測試"), text(u8"中文字係咪好撚勁呢")
+              text(u8"你好測試"), text(u8"你好世界")
           };
 
           PowerDraw::Text {

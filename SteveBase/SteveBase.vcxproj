@@ -315,12 +315,10 @@
     <IntDir>$(SolutionDir)\$(ProjectName)\obj\$(Configuration)\</IntDir>
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <LibraryPath>$(DXSDK_DIR)LIB\x86;$(LibraryPath)</LibraryPath>
-    <ExcludePath>C:\vcpkg\installed\x86-windows-static\lib;C:\vcpkg\installed\x86-windows-static\include\boost;$(ExcludePath)</ExcludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <LibraryPath>$(DXSDK_DIR)LIB\x86;$(LibraryPath)</LibraryPath>
-    <ExcludePath>C:\vcpkg\installed\x86-windows-static\lib;C:\vcpkg\installed\x86-windows-static\include\boost;$(ExcludePath)</ExcludePath>
     <IncludePath>.\include;.\;.\vendor\oshgui;$(DXSDK_DIR)include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -336,7 +334,6 @@
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <LibraryPath>$(DXSDK_DIR)LIB\x86;$(LibraryPath)</LibraryPath>
     <GenerateManifest>false</GenerateManifest>
-    <ExcludePath>C:\vcpkg\installed\x86-windows-static\lib;C:\vcpkg\installed\x86-windows-static\include\boost;$(ExcludePath)</ExcludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -348,7 +345,6 @@
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <LibraryPath>$(DXSDK_DIR)LIB\x86;$(LibraryPath)</LibraryPath>
     <GenerateManifest>false</GenerateManifest>
-    <ExcludePath>C:\vcpkg\installed\x86-windows-static\lib;C:\vcpkg\installed\x86-windows-static\include\boost;$(ExcludePath)</ExcludePath>
     <IncludePath>.\include;.\;.\vendor\oshgui;$(DXSDK_DIR)include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
