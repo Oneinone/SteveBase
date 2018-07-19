@@ -1,0 +1,14 @@
+node_modules/
+.vs/
+packages/
+*/bin/
+*/obj/
+*/Debug/
+*/Release/
+yarn.*
+.next/
+*.VC.db
+seafile-ignore.txt
+**/bin/
+**/obj/
+**/x64/

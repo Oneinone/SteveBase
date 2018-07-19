@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6BB38993-8F36-4F8B-90F6-DB8693742A16}</ProjectGuid>
+    <RootNamespace>SteveBaseTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <VcpkgTriplet>x86-windows-static</VcpkgTriplet>
+    <VcpkgEnabled>true</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\$(ProjectName)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\$(ProjectName)\obj\$(Configuration)\</IntDir>
+    <IncludePath>..\SteveBase\;.\;.\vendor\bandit;..\SteveBase\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>..\SteveBase\;.\;.\vendor\bandit;..\SteveBase\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\$(ProjectName)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\$(ProjectName)\obj\$(Configuration)\</IntDir>
+    <IncludePath>..\SteveBase\;.\;.\vendor\bandit;..\SteveBase\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>..\SteveBase\;.\;.\vendor\bandit;..\SteveBase\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalOptions>/await /Qpar-report:1 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalOptions>/await /Qpar-report:1 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalOptions>/await /Qpar-report:1 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalOptions>/await /Qpar-report:1 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="testSuite.hpp" />
+    <ClInclude Include="vendor\bandit-master\bandit\adapters\adapter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\adapters\adapters.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\adapters\snowhouse.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\assertion_exception.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\bandit.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\context.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\external\optionparser.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\failure_formatters\default_failure_formatter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\failure_formatters\failure_formatter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\failure_formatters\failure_formatters.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\failure_formatters\visual_studio_failure_formatter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\filter_chain.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\grammar.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\listener.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\options.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\registration\registrar.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\registration\spec_registry.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\colored_reporter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\colorizer.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\crash_reporter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\dots_reporter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\info_reporter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\progress_reporter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\reporters.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\single_line_reporter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\spec_reporter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\test_run_summary.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\reporters\xunit_reporter.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\runner.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\run_policies\always_run_policy.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\run_policies\bandit_run_policy.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\run_policies\never_run_policy.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\run_policies\run_policies.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\run_policies\run_policy.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\test_run_error.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\types.h" />
+    <ClInclude Include="vendor\bandit-master\bandit\version.h" />
+    <ClInclude Include="vendor\fmt\container.h" />
+    <ClInclude Include="vendor\fmt\format.h" />
+    <ClInclude Include="vendor\fmt\ostream.h" />
+    <ClInclude Include="vendor\fmt\posix.h" />
+    <ClInclude Include="vendor\fmt\printf.h" />
+    <ClInclude Include="vendor\fmt\string.h" />
+    <ClInclude Include="vendor\fmt\time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SteveBase\src\maths\EulerAngle.cpp" />
+    <ClCompile Include="..\SteveBase\src\maths\Vector3.cpp" />
+    <ClCompile Include="..\SteveBase\src\maths\ViewMatrix.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="tests\Vector3\Minus\MinusAdvancedTest.cpp" />
+    <ClCompile Include="tests\Vector3\Minus\MinusBasicTest.cpp" />
+    <ClCompile Include="tests\Vector3\Plus\PlusAdvancedTest.cpp" />
+    <ClCompile Include="tests\Vector3\Plus\PlusBasicTest.cpp" />
+    <ClCompile Include="vendor\fmt\format.cc" />
+    <ClCompile Include="vendor\fmt\ostream.cc" />
+    <ClCompile Include="vendor\fmt\posix.cc" />
+    <ClCompile Include="vendor\fmt\printf.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

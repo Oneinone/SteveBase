@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\manager">
+      <UniqueIdentifier>{6f475a4e-8655-4f72-865a-956c74f7ab59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\utility">
+      <UniqueIdentifier>{1629f3f6-a56a-44bb-8b34-efa64e4d75ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\manager">
+      <UniqueIdentifier>{19215a66-cff7-4bdd-9dcd-667a2c5f721b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility">
+      <UniqueIdentifier>{c047eb6a-1d23-4c4f-bd8b-fc13163b3308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{24d8607f-ad41-44cf-b065-d57e13ebde49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\hopscotch-map">
+      <UniqueIdentifier>{40430c88-e284-42e6-990e-f892404a1604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\imgui">
+      <UniqueIdentifier>{98dc7379-ad10-4da7-b19a-667c537bd228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\json">
+      <UniqueIdentifier>{fcc945c5-23f8-418e-8f5c-e01d83904561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\pector">
+      <UniqueIdentifier>{b2cb80d3-b1b3-4761-9eb7-4b8f6fd3426c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\XorStr">
+      <UniqueIdentifier>{184ffe06-0e1b-4b5f-b205-4d4f049929ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\manager\translations">
+      <UniqueIdentifier>{ecfaa9e3-7b44-478f-8ceb-d0c9833014bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\misc">
+      <UniqueIdentifier>{780a8f13-dcd6-4ee0-a11e-2ebbddf75fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\miniz">
+      <UniqueIdentifier>{cd87698d-a243-48e9-890e-64298babbeec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\assets">
+      <UniqueIdentifier>{6c6ce20d-61fa-488f-a29b-47a72809523a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\assets\hitsound">
+      <UniqueIdentifier>{6d1a9a85-8bf9-47e4-beff-e1e9be428b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\assets">
+      <UniqueIdentifier>{024a4c21-f020-4594-93ea-d001e425b95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\assets\hitsound">
+      <UniqueIdentifier>{8f934f7b-347f-4908-95d6-2170acc9d753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\ggformat">
+      <UniqueIdentifier>{8bc2c14e-1213-4a06-a55a-12238f7495c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\manager\DrawManager.cpp">
+      <Filter>src\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\manager\I18NManager.cpp">
+      <Filter>src\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\manager\StateManager.cpp">
+      <Filter>src\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\manager\VariableManager.cpp">
+      <Filter>src\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\utility\GameUtility.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\utility\SystemUtility.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\imgui\imgui_demo.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\imgui\imgui_draw.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\imgui\dx9\imgui_impl_dx9.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\imgui\imgui.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\imgui\imgui_extension.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\miniz\miniz.c">
+      <Filter>vendor\miniz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\miniz\miniz_tdef.c">
+      <Filter>vendor\miniz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\miniz\miniz_tinfl.c">
+      <Filter>vendor\miniz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\assets\hitsound\quake.cpp">
+      <Filter>src\assets\hitsound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\assets\hitsound\hitmarker.cpp">
+      <Filter>src\assets\hitsound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\vendor\ggformat\ggformat.cc">
+      <Filter>vendor\ggformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SteveBase\src\lib.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SteveBase\SteveBase.vcxproj" />
+    <None Include="..\SteveBase\src\manager\translations\en_us.inc">
+      <Filter>src\manager\translations</Filter>
+    </None>
+    <None Include="..\SteveBase\src\manager\translations\zh_hk.inc">
+      <Filter>src\manager\translations</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SteveBase\include\manager\DrawManager.hpp">
+      <Filter>include\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\manager\FontManager.hpp">
+      <Filter>include\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\manager\I18NManager.hpp">
+      <Filter>include\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\manager\StateManager.hpp">
+      <Filter>include\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\manager\VariableManager.hpp">
+      <Filter>include\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\utility\GameUtility.hpp">
+      <Filter>include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\utility\Logger.hpp">
+      <Filter>include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\utility\SystemUtility.hpp">
+      <Filter>include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\utility\VirtualRAIIProtect.hpp">
+      <Filter>include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\XorStr\XorStr.h">
+      <Filter>vendor\XorStr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\pector\include\pector\enhanced_allocators.h">
+      <Filter>vendor\pector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\pector\include\pector\malloc_allocator.h">
+      <Filter>vendor\pector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\pector\include\pector\malloc_allocator_compat.h">
+      <Filter>vendor\pector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\pector\include\pector\pector.h">
+      <Filter>vendor\pector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\pector\include\pector\pector_internals.h">
+      <Filter>vendor\pector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\pector\include\pector\recommended_size.h">
+      <Filter>vendor\pector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\json\json.hpp">
+      <Filter>vendor\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\imgui\imgui.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\imgui\imgui_internal.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\imgui\stb_rect_pack.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\imgui\stb_textedit.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\imgui\stb_truetype.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\imgui\dx9\imgui_impl_dx9.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\imgui\imconfig.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\hopscotch-map\src\hopscotch_hash.h">
+      <Filter>vendor\hopscotch-map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\hopscotch-map\src\hopscotch_map.h">
+      <Filter>vendor\hopscotch-map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\hopscotch-map\src\hopscotch_sc_map.h">
+      <Filter>vendor\hopscotch-map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\hopscotch-map\src\hopscotch_sc_set.h">
+      <Filter>vendor\hopscotch-map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\hopscotch-map\src\hopscotch_set.h">
+      <Filter>vendor\hopscotch-map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\misc\DataStructure.hpp">
+      <Filter>include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\misc\TypeAliases.hpp">
+      <Filter>include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\stdafx.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\imgui\imgui_extension.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\misc\Color.hpp">
+      <Filter>include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\misc\FunctionalProgramming.hpp">
+      <Filter>include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\misc\IJsonSerializable.hpp">
+      <Filter>include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\misc\Macro.hpp">
+      <Filter>include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\misc\ProxiedClass.hpp">
+      <Filter>include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\misc\TemplateMetaprogramming.hpp">
+      <Filter>include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\utility\PowerDraw.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\miniz\miniz.h">
+      <Filter>vendor\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\miniz\miniz_common.h">
+      <Filter>vendor\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\miniz\miniz_tdef.h">
+      <Filter>vendor\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\miniz\miniz_tinfl.h">
+      <Filter>vendor\miniz</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\assets\hitsound\hitmarker.hpp">
+      <Filter>include\assets\hitsound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\assets\hitsound\quake.hpp">
+      <Filter>include\assets\hitsound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\include\assets\IHitSound.h">
+      <Filter>include\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SteveBase\vendor\ggformat\ggformat.h">
+      <Filter>vendor\ggformat</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
